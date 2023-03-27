@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Objects</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__container">
+                <div class="header__block">
+                    <div class="header__item">
+                        <h1 class="header__title">Short table of Arrays parameters</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__content content">
+            <div class="content__wrapper">
+                <div class="content__container">
+                    <div class="content__block">
+                        <div class="content__header">
+                            <div class="content__title">
+                                <h2 class="title">Name</h2></div>
+                            <div class="content__title">
+                                <h2 class="title">Code Writing</h2></div>
+                            <div class="content__title">
+                                <h2 class="title">Description</h2></div>
+                            <div class="content__title">
+                                <h2 class="title">Example</h2></div>
+                        </div>
+                        <div class="content__row row">
+                            <div class="row__block">
+                            <div class="row__item">
+                                <div class="row__name"><h2 class="row__title">Associative array (OBJECT)</h2></div>
+                            </div>
+                                <div class="row__item">
+                                <div class="row__writing"><h3 class="row__title row__title--small">let obj = { <br>
+                                                                                           property1: value1,<br>
+                                                                                           property2: value2,<br>
+                                                                                           property3: value3,....<br>
+                                    } </h3>
+                                </div></div>
+                                <div class="row__item row__item--end">
+                                <div class="row__desc"><p class="row__text">Create a new object</p></div>
+                            </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">let obj = { <br>
+                                        name: 'Katya',<br>
+                                        secondName: 'Stelmakhova',<br>
+                                        age: 23,<br>
+                                        favoriteNumbers: [3,7,27]} </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Accessing property</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> object.property</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Access to the object's property</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text"> let obj = { <br>
+                                              name: 'Katya',<br>
+                                              secondName: 'Stelmakhova',<br>
+                                              age: 23,<br>
+                                              scores: [5,8,3,6]
+                                        } <br>
+                                    alert(obj.age) (23)
+                                    alert(obj.scores[1]) (8)
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Changing value in object's property<br> Adding property with value to object </h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> object.property = value</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Changing value in the object's property <br> Adding property with value to object </p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text"> let obj = { <br>
+                                        name: 'Katya',<br>
+                                        secondName: 'Stelmakhova',<br>
+                                        age: 23,<br>
+                                        scores: [5,8,3,6]
+                                        } <br> <br>
+                                        obj.name = 'Nastya'; <br>
+                                        obj.phone = 0729105261 <br><br>
+                                        obj = {
+                                        name: 'Nastya',<br>
+                                        secondName: 'Stelmakhova',<br>
+                                        age: 23,<br>
+                                        scores: [5,8,3,6],<br>
+                                        phone: 0729105261
+                                        }
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">delete</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> delete object.property</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Deleting object's property </p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text"> let obj = { <br>
+                                        name: 'Katya',<br>
+                                        secondName: 'Stelmakhova',<br>
+                                        age: 23,<br>
+                                        scores: [5,8,3,6], <br>
+                                        phone: 0729105261
+                                        } <br> <br>
+                                        delete obj.phone<br><br>
+                                        obj = {
+                                        name: 'Nastya',<br>
+                                        secondName: 'Stelmakhova',<br>
+                                        age: 23,<br>
+                                        scores: [5,8,3,6]<br>
+                                        }
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">in</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> 'property' in object</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Checking if property exists in object <br> You need quotation marks('..')</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text"> let obj = { <br>
+                                        name: 'Katya',<br>
+                                        secondName: 'Stelmakhova',<br>
+                                        age: 23,<br>
+                                        scores: [5,8,3,6], <br>
+                                        phone: 0729105261
+                                        } <br> <br>
+                                        alert(phone in obj)<br>
+                                        alert(status in obj)<br><br>
+                                        true <br>
+                                        false
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">for in</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> for(let propertyName in object){ <br>
+                                       ............. <br>
+                                        }</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Checking all properties in object <br> You do NOT need quotation marks('..')</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text"> let obj = { <br>
+                                        name: 'Katya',<br>
+                                        secondName: 'Stelmakhova',<br>
+                                        age: 23,<br>
+                                        scores: [5,8,3,6], <br>
+                                        phone: 0729105261
+                                        } <br> <br>
+                                       for(propertyName in obj){<br>
+                                        console.log(propertyName)<br>
+                                        }<br><br>
+                                        name<br>
+                                        secondName<br>
+                                        age<br>
+                                        scores<br>
+                                        phone<br>
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Creating object's properties' names</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> let name = 'propertyName' ; let name2 = 11 <br>
+                                         let obj = {<br>
+                                        [name]: 43,<br>
+                                        ['age_'+name2]: 'Oskar'<br>
+                                        }
+                                    </h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Creating object's properties' names</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">
+                                      Result from the second line: obj = {<br>
+                                        propertyName: 43,<br>
+                                        age_11: 'Oskar'<br>
+                                        }
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Creating object from variable</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> let var = 'value'; let var1 = 3; let var3 = [el,el,el] <br>
+                                        let obj = {<br>
+                                           var, <br>
+                                          var1,<br>
+                                          var3<br>
+                                        }
+                                    </h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Creating object from variables</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">
+                                        Result from the second line: obj = {<br>
+                                        var: 'value',<br>
+                                        var1: 3,<br>
+                                        var3: [el,el,el]
+                                        }
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Object.fromEntries()</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small"> let baseArr = [['name','Katya'],['age',23],['scores',[2,4,5]],] <br>
+                                        let obj = Object.fromEntries(baseArr)
+                                    </h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Creating object from array</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">
+                                        Result from the second line: obj = {<br>
+                                        name: 'Katya',<br>
+                                        age: 23,<br>
+                                        scores: [2,4,5]
+                                        }
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Spread operation</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small">let newObj = {...baseObj}</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Copying Object <br> Need to be careful , can NOT copy array because object's property contains just an array's address <br> For full normal copying better use JSON method <br> (look at the Array Table=</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">
+                                        obj = {<br>
+                                        name: 'Katya',<br>
+                                        age: 23,<br>
+                                        surname: 'Stelmakhova' <br>
+                                        } <br> <br>
+                                        let newObj  = {...obj}
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Object.assign <br> spread operation</h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small">Object.assign(objectWhereToCopy, objectFromToCopy, objectFromToCopy) <br> obj1 = {...obj1, ...obj2, ...obj3}</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Copying properties from one objects to another. Object to copy from will not be deleted. Object where to copy will fill up with new properties</p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">
+                                        obj1 = {<br>
+                                        name: 'Katya'<br>
+                                        }<br>
+                                        obj2 = {<br>
+                                        age: 23<br>
+                                        }<br>
+                                        obj3 = {<br>
+                                        surname: 'Stelmakhova'<br>
+                                        }<br><br>
+                                        Object.assign(obj1, obj2, obj3) <br>
+                                        or <br>
+                                        obj1 = {...obj1, ...obj2, ...obj3}<br><br>
+                                        obj1 = {<br>
+                                        name: 'Katya',<br>
+                                        age:23,<br>
+                                        surname: 'Stelmakhova'}<br>
+                                        obj2 = {<br>
+                                        age:23 }<br>
+                                        obj3 = {<br>
+                                        surname:'Stelmakhova' }<br>
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Destructurization of object </h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small">let {key1, key2, key3} = object</h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Destructurizate object allowing to get each property of it, so we can change them </p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">
+                                        obj = {<br>
+                                        name: 'Katya',<br>
+                                        age: 23,<br>
+                                        surname: 'Stelmakhova' <br>
+                                        } <br> <br>
+                                        let{name} = obj // 'Katya'
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="row__block">
+                                <div class="row__item">
+                                    <div class="row__name"><h2 class="row__title">Destructurization of object </h2></div>
+                                </div>
+                                <div class="row__item">
+                                    <div class="row__writing"><h3 class="row__title row__title--small">
+                                        obj = {<br>
+                                        key1: 'value',<br>
+                                        key2: 'value',<br>
+                                        key3: 'value'<br>
+                                        }<br>
+                                        function name({key1,key2}){ <br>
+                                             .............. <br>
+                                        }<br>
+                                        name(object)
+                                    </h3>
+                                    </div></div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">Destructurizate object allowing to get each property of it, so we can change them </p></div>
+                                </div>
+                                <div class="row__item row__item--end">
+                                    <div class="row__desc"><p class="row__text">
+                                        obj = {<br>
+                                        price:2000,<br>
+                                        quantity: 10,<br>
+                                        surname: 'Stelmakhova' <br>
+                                        } <br> <br>
+                                        function name (price, quantity){
+                                          return price*quantity
+                                        }
+                                        name(obj)
+                                    </p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+</div>
+</body>
+</html>
